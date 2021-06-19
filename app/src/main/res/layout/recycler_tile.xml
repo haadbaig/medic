@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20px"
+    android:paddingLeft="10px"
+    android:paddingRight="40px"
+    android:elevation="0dp"
+    app:layout_constraintCircleRadius="10px"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="40px"
+        android:elevation="0dp"
+        android:background="@color/cardview_light_background">
+
+        <RelativeLayout
+            android:layout_width="403dp"
+            android:layout_height="match_parent"
+            android:background="#1A000000"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/medicine" />
+
+            <TextView
+                android:id="@+id/categoryName"
+                android:layout_width="220dp"
+                android:layout_height="59dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toRightOf="@id/categoryImage"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
