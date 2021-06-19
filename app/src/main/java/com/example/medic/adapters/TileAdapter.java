@@ -37,11 +37,11 @@ public class TileAdapter extends RecyclerView.Adapter<TileHolder> {
         holder.hd.setText(categories.get(position));
         Context con = holder.getTextView().getContext();
         Log.d("ContextName", con.toString());
-        if(con.toString().contains("doctors")) {
+        if(con.toString().contains("Doctors_Category")) {
             int id = con.getResources().getIdentifier(categories.get(position).toLowerCase(),
                     "drawable", con.getPackageName());
             holder.img.setImageResource(id);
-        }else if(con.toString().contains("medic")){
+        }else if(con.toString().contains("Medicines")){
             int id = con.getResources().getIdentifier("pills",
                     "drawable", con.getPackageName());
             holder.img.setImageResource(id);

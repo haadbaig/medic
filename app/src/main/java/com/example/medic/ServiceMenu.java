@@ -19,7 +19,7 @@ public class ServiceMenu extends AppCompatActivity {
         doc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ServiceMenu.this, doctors.class);
+                Intent i = new Intent(ServiceMenu.this, Doctors_Category.class);
                 i.putExtra("User", "email, password");
                 startActivity(i);
             }
@@ -27,7 +27,7 @@ public class ServiceMenu extends AppCompatActivity {
         med.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ServiceMenu.this, medicines.class);
+                Intent i = new Intent(ServiceMenu.this, Medicines.class);
                 i.putExtra("User", "email, password");
                 startActivity(i);
             }

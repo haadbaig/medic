@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Medic">
-        <activity android:name=".medicines"></activity>
-        <activity android:name=".doctors" />
+        <activity android:name=".Doctors_List"></activity>
+        <activity android:name=".Medicines" />
+        <activity android:name=".Doctors_Category" />
         <activity android:name=".ServiceMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

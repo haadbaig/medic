@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="20px"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="40px"
+        android:padding="20px"
+        android:paddingLeft="10px"
+        android:paddingRight="40px"
+        android:elevation="0dp"
+        android:background="@color/cardview_light_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1A000000"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/medicine"
+                android:paddingLeft="10px"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/specialization"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/profileImage"
+                android:layout_toRightOf="@+id/profileImage" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/specialization"
+                android:layout_toRightOf="@+id/specialization" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
