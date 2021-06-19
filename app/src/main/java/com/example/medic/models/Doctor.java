@@ -1,8 +1,9 @@
 package com.example.medic.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Doctor {
+public class Doctor implements Serializable {
     String name;
     ArrayList<String> comments;
     int rating;

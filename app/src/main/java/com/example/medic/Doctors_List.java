@@ -33,13 +33,13 @@ public class Doctors_List extends AppCompatActivity {
         obj.setter("John Doe",null,5,"I am Cardiologist","Cardiologist",null);
         temp.add(obj);
         obj = new Doctor();
-        obj.setter("John Mace",null,5,"I am Pediatrician","Pediatrician",null);
+        obj.setter("John Mace",null,4,"I am Pediatrician","Pediatrician",null);
         temp.add(obj);
         obj = new Doctor();
-        obj.setter("Sara John",null,5,"I am Gynaecologist","Gynaecologist",null);
+        obj.setter("Sara John",null,3,"I am Gynaecologist","Gynaecologist",null);
         temp.add(obj);
         obj = new Doctor();
-        obj.setter("Doe John",null,5,"I am Dermatologist","Dermatologist",null);
+        obj.setter("Doe John",null,2,"I am Dermatologist","Dermatologist",null);
         temp.add(obj);
 
         return temp;
