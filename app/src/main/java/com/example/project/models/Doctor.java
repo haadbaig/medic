@@ -1,4 +1,4 @@
-package com.example.medic.models;
+package com.example.project.models;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,26 +9,23 @@ public class Doctor implements Serializable {
     int rating;
     String desc;
     String specialization;
-    ArrayList<String> practiceInn;
 
     public Doctor(){};
 
-    public Doctor(String n, ArrayList<String> comm, int rat, String de, String spec, ArrayList<String> pi ){
+    public Doctor(String n, ArrayList<String> comm, int rat, String de, String spec ){
         name = n;
         comments =comm;
         rating = rat;
         desc = de;
         specialization = spec;
-        practiceInn = pi;
     }
 
-    public void setter(String n, ArrayList<String> comm, int rat, String de, String spec, ArrayList<String> pi ){
+    public void setter(String n, ArrayList<String> comm, int rat, String de, String spec ){
         name = n;
         comments =comm;
         rating = rat;
         desc = de;
         specialization = spec;
-        practiceInn = pi;
     }
 
 
@@ -52,7 +49,4 @@ public class Doctor implements Serializable {
         return specialization;
     }
 
-    public ArrayList<String> getPracticeInn() {
-        return practiceInn;
-    }
 }

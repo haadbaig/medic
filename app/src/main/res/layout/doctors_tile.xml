@@ -31,26 +31,26 @@
                 android:paddingLeft="10px"/>
 
             <TextView
-                android:id="@+id/name"
-                android:layout_width="254dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_width="257dp"
+                android:layout_height="22dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="4dp"
                 android:layout_toRightOf="@id/profileImage"
                 android:fontFamily="sans-serif-condensed"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/specialization"
                 android:layout_width="162dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/name"
+                android:layout_below="@+id/title"
                 android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="11dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="30dp"
                 android:layout_toEndOf="@+id/profileImage"
                 android:layout_toRightOf="@+id/profileImage" />
 
@@ -58,12 +58,24 @@
                 android:id="@+id/rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/name"
+                android:layout_below="@+id/title"
                 android:layout_marginStart="9dp"
                 android:layout_marginLeft="9dp"
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/specialization"
                 android:layout_toRightOf="@+id/specialization" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/profileImage"
+                android:layout_toRightOf="@+id/profileImage"
+                android:text="TextView" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

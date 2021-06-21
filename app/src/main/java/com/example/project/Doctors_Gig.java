@@ -1,4 +1,4 @@
-package com.example.medic;
+package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.example.medic.models.Doctor;
+import com.example.project.models.Doctor;
 
 public class Doctors_Gig extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class Doctors_Gig extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_doctors_gig);
     dp = (ImageView) findViewById(R.id.docprofileimage);
-    name = (TextView) findViewById((R.id.name));
+    name = (TextView) findViewById((R.id.title));
     specaiality = (TextView) findViewById(R.id.specialization);
     desc = (TextView) findViewById(R.id.desc);
     rb = (RatingBar) findViewById(R.id.ratingBar);

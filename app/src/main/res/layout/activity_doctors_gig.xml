@@ -14,14 +14,14 @@
         android:layout_width="181dp"
         android:layout_height="175dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/title"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/doc" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/title"
         android:layout_width="174dp"
         android:layout_height="43dp"
         android:layout_marginEnd="28dp"

@@ -1,4 +1,4 @@
-package com.example.medic.adapters;
+package com.example.project.adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medic.R;
-import com.example.medic.holders.TileHolder;
+import com.example.project.R;
+import com.example.project.holders.TileHolder;
 
 import org.jetbrains.annotations.NotNull;
-import com.example.medic.holders.TileHolder;
+
 import java.util.ArrayList;
 
 public class TileAdapter extends RecyclerView.Adapter<TileHolder> {

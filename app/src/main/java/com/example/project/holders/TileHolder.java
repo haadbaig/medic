@@ -1,16 +1,14 @@
-package com.example.medic.holders;
+package com.example.project.holders;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medic.Doctors_List;
-import com.example.medic.R;
+import com.example.project.Doctors_List;
+import com.example.project.R;
 
 public class TileHolder extends RecyclerView.ViewHolder {
     public ImageView img;
@@ -18,7 +16,7 @@ public class TileHolder extends RecyclerView.ViewHolder {
     public TileHolder(@NonNull View itemView) {
         super(itemView);
         img = (ImageView)itemView.findViewById(R.id.profileImage);
-        hd = (TextView)itemView.findViewById(R.id.name);
+        hd = (TextView)itemView.findViewById(R.id.title);
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

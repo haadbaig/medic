@@ -1,4 +1,4 @@
-package com.example.medic;
+package com.example.project;
 
 import org.junit.Test;
 
